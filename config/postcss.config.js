@@ -21,7 +21,7 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
 
 module.exports = {
   plugins: [
-    require('tailwindcss'),
+    require('tailwindcss')({ config: './src/css/tailwind.config.js' }),
     require('autoprefixer'),
     require('postcss-flexbugs-fixes'),
     require('postcss-preset-env')({
