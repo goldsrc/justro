@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -6,7 +7,7 @@ const ROOT_DIRECTORY = process.cwd();
 module.exports = {
   mode: 'development',
   entry: {
-    main: path.resolve(ROOT_DIRECTORY, 'src/index.js'),
+    main: path.resolve(ROOT_DIRECTORY, 'src/index.ts'),
   },
   output: {
     path: path.resolve(ROOT_DIRECTORY, 'build'),
@@ -22,6 +23,11 @@ module.exports = {
   devtool: 'cheap-module-eval-source-map',
   module: {
     rules: [
+      {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
       {
         test: /\.js$/,
         exclude: /node_modules/,

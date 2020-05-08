@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 /* eslint-disable import/no-extraneous-dependencies */
 const path = require('path');
 
@@ -14,7 +15,7 @@ const ROOT_DIRECTORY = process.cwd();
 module.exports = {
   mode: 'production',
   entry: {
-    main: path.resolve(ROOT_DIRECTORY, 'src/index.js'),
+    main: path.resolve(ROOT_DIRECTORY, 'src/index.ts'),
   },
   output: {
     path: path.resolve(ROOT_DIRECTORY, 'build'),
@@ -23,6 +24,11 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
       {
         test: /\.js$/,
         exclude: /node_modules/,
@@ -252,7 +258,7 @@ module.exports = {
       }),
     ],
     runtimeChunk: {
-      name: entrypoint => `runtime-${entrypoint.name}`,
+      name: (entrypoint) => `runtime-${entrypoint.name}`,
     },
     splitChunks: {
       chunks: 'all',
