@@ -23,6 +23,7 @@
     "clean-webpack-plugin": "^3.0.0",
     "compression-webpack-plugin": "^3.1.0",
     "core-js": "^3.6.5",
+    "cross-env": "^7.0.2",
     "css-loader": "^3.5.3",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
@@ -54,7 +55,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server --open --config=config/webpack.dev.js",
-    "build": "webpack --config=config/webpack.prod.js",
+    "build": "cross-env NODE_ENV=production webpack --config=config/webpack.prod.js",
     "lint": "eslint '*/**/*.{js,ts}' --quiet --fix"
   },
   "dependencies": {},
