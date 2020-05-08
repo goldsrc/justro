@@ -1,6 +1,6 @@
+import '../node_modules/shabnam-font/dist/font-face.css';
 import './css/main.css';
 import './scss/main.scss';
-
 const lazyImages = [...document.querySelectorAll('img.lazy')];
 
 const lazyImageObserver = new IntersectionObserver((entries) => {

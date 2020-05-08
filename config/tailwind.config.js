@@ -1,6 +1,9 @@
 module.exports = {
   purge: false,
   theme: {
+    fontFamily: {
+      body: ['Shabnam', 'sans-serif'],
+    },
     extend: {
       colors: {
         main: {
