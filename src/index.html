@@ -18,14 +18,99 @@
   <body class="rtl font-body">
     <header class="container mx-auto">
       <!--Mobile Ham Menu-->
-      <div class="shadow-md flex justify-around items-center h-20">
-        <ion-icon name="menu" class="text-4xl text-main-630"></ion-icon>
+      <div class="shadow-md flex justify-around items-center h-20 z-50">
+        <button
+          class="hamburger hamburger--collapse outline-none mr-2 focus:outline-none mt-1"
+          type="button"
+        >
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
         <span class="flex-1 mr-2 font-bold text-2xl text-main-690">جاسترو</span>
-        <ion-icon
-          name="search-outline"
-          class="text-3xl ml-4 text-main-630"
-        ></ion-icon>
+        <!--Search bar-->
+        <input
+          type="text"
+          id="search"
+          name="search"
+          class="w-0 border-b-2 border-main-690 transition-all duration-200 outline-none"
+        />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+          class="search-icon ml-2"
+        >
+          <path
+            d="M221.09,64A157.09,157.09,0,1,0,378.18,221.09,157.1,157.1,0,0,0,221.09,64Z"
+            class="search-icon-lens"
+          />
+          <line
+            x1="338.29"
+            y1="338.29"
+            x2="448"
+            y2="448"
+            class="search-icon-stick"
+          />
+          <line
+            xmlns="http://www.w3.org/2000/svg"
+            class="search-icon-stick search-icon-stick--inverted"
+            x1="448"
+            y1="338.3"
+            x2="333.6"
+            y2="448"
+          />
+        </svg>
+        <!--End Search bar-->
       </div>
+      <!--Navbar-->
+      <nav class="hidden">
+        <ul class="list-none">
+          <li class="h-10 shadow-xs">
+            <a
+              href="#"
+              class="text-gray-800 no-underline font-light w-full h-full flex items-center justify-center"
+              >صفحه اصلی</a
+            >
+          </li>
+          <li class="h-10 shadow-xs">
+            <a
+              href="#"
+              class="text-gray-800 no-underline font-light w-full h-full flex items-center justify-center"
+              >ایده‌ها</a
+            >
+          </li>
+          <li class="h-10 shadow-xs">
+            <a
+              href="#"
+              class="text-gray-800 no-underline font-light w-full h-full flex items-center justify-center"
+              >ویژگی‌ها</a
+            >
+          </li>
+          <li class="h-10 shadow-xs">
+            <a
+              href="#"
+              class="text-gray-800 no-underline font-light w-full h-full flex items-center justify-center"
+              >درباره ما</a
+            >
+          </li>
+          <li class="h-10 shadow-xs">
+            <a
+              href="#"
+              class="text-gray-800 no-underline font-light w-full h-full flex items-center justify-center"
+              >همکاری با ما</a
+            >
+          </li>
+          <li class="h-10 shadow-xs">
+            <a
+              href="#"
+              class="text-gray-800 no-underline font-light w-full h-full flex items-center justify-center"
+              >تماس با ما</a
+            >
+          </li>
+        </ul>
+        <a href="#" class="orange-button">دانلود</a>
+      </nav>
+      <!--End Navbar-->
     </header>
   </body>
 </html>

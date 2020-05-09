@@ -1,0 +1,33 @@
+$search-color: #00a680;
+$search-transition-duration: 0.4s;
+/*! purgecss start ignore */
+.search-icon {
+  width: 2rem;
+  height: 2rem;
+  &-stick {
+    fill: none;
+    stroke: $search-color;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+    stroke-width: 32px;
+    transition: all $search-transition-duration;
+    &--inverted {
+      opacity: 0;
+    }
+    &--cross {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.5);
+    }
+  }
+  &-lens {
+    fill: none;
+    stroke: $search-color;
+    stroke-miterlimit: 10;
+    stroke-width: 32px;
+    transition: all $search-transition-duration;
+    &--cross {
+      opacity: 0;
+    }
+  }
+}
+/*! purgecss end ignore */

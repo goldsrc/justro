@@ -59,6 +59,8 @@
     "lint": "eslint '*/**/*.{js,ts}' --quiet --fix"
   },
   "dependencies": {
+    "animate.css": "^4.0.0",
+    "hamburgers": "^1.1.3",
     "shabnam-font": "^5.0.0"
   },
   "browserslist": [
