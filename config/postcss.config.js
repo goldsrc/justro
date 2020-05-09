@@ -1,8 +1,8 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable global-require */
 const purgecss = require('@fullhuman/postcss-purgecss')({
+  keyframes: true,
   content: ['./src/*.html', './src/*.js', './src/*.ts'],
-
   defaultExtractor: (content) => {
     const broadMatches = content.match(/[^<>"'`\s]*[^<>"'`\s:]/g) || [];
 

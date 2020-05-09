@@ -1,5 +1,9 @@
 import '../node_modules/shabnam-font/dist/font-face.css';
-import '../node_modules/animate.css/source/animate.css';
+import '../node_modules/animate.css/source/_vars.css';
+import '../node_modules/animate.css/source/_base.css';
+import '../node_modules/animate.css/source/bouncing_entrances/bounceInDown.css';
+import '../node_modules/animate.css/source/bouncing_exits/bounceOutUp.css';
+
 import './scss/main.scss';
 import './css/main.css';
 const hamburger = document.querySelector('.hamburger');
