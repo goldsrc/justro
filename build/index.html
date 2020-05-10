@@ -1,0 +1,36 @@
+Html Webpack Plugin:
+<pre>
+  Error: html-webpack-plugin could not minify the generated output.
+  In production mode the html minifcation is enabled by default.
+  If you are not generating a valid html output please disable it manually.
+  You can do so by adding the following setting to your HtmlWebpackPlugin config:
+  |
+  |    minify: false
+  |
+  See https://github.com/jantimon/html-webpack-plugin#options for details.
+  For parser dedicated bugs please create an issue here:
+  https://danielruf.github.io/html-minifier-terser/
+  Parse Error: <img src=data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMi4wLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCj  xzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgdmlld0JveD0iMCAwIDQxNCAy  MTkiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQxNCAyMTk7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOiNDREZGRjQ7fQ0KPC9zdHlsZT4NCjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik00MTAuOCwwLjFjMCwwLTEuNCwzMy4yLT  M4LDQwLjljLTQ3LjIsMTAtNzYuNi05LjEtMTE4LjEsMTYuN2MtNDQuMiwyNy40LTI1LjUsNzAuMy0zNy43LDEwOQ0KCWMtMTIuMiwzOC43LTUwLjksNTIuOS04NS4zLDUxLjFjLTI0LjItMS4zLTc0LTE0LjctMTExLjMtNzkuNEMtOS4xLDg3LjEsMTIuMi0wLjEsMTIuMi0wLjFMNDEwLjgsMC4xeiIvPg0K  PC9zdmc+DQo= alt="logo background" class="w-auto h-48 -mr-24 transition-all duration-200"/> </header> <main></main> <script src="runtime-main.8400f2a5.bundle.js"></script><script src="main.fc7b9928.chunk.js"></script></body> </htm  l>
+  
+  - htmlparser.js:244 new HTMLParser
+    [justro]/[html-minifier-terser]/src/htmlparser.js:244:13
+  
+  - htmlminifier.js:984 minify
+    [justro]/[html-minifier-terser]/src/htmlminifier.js:984:3
+  
+  - htmlminifier.js:1345 Object.exports.minify
+    [justro]/[html-minifier-terser]/src/htmlminifier.js:1345:16
+  
+  - index.js:993 HtmlWebpackPlugin.minifyHtml
+    [justro]/[html-webpack-plugin]/index.js:993:46
+  
+  - index.js:422 HtmlWebpackPlugin.postProcessHtml
+    [justro]/[html-webpack-plugin]/index.js:422:40
+  
+  - index.js:247 
+    [justro]/[html-webpack-plugin]/index.js:247:25
+  
+  - task_queues.js:97 processTicksAndRejections
+    internal/process/task_queues.js:97:5
+  
+</pre>
