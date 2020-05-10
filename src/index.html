@@ -16,9 +16,9 @@
     ></script>
   </head>
   <body class="rtl font-body">
-    <header class="container mx-auto">
+    <header class="container mx-auto overflow-x-hidden">
       <!--Mobile Ham Menu-->
-      <div class="shadow-md flex justify-around items-center h-20 z-50">
+      <div class="shadow-md flex justify-around items-center h-20">
         <button
           class="hamburger hamburger--stand outline-none mr-4 focus:outline-none mt-1"
           type="button"
@@ -27,7 +27,7 @@
             <span class="hamburger-inner"></span>
           </span>
         </button>
-        <span class="flex-1 mr-2 font-bold text-2xl text-main-690">جاسترو</span>
+        <h1 class="flex-1 mr-2 font-bold text-2xl text-main-690">جاسترو</h1>
         <!--Search bar-->
         <input
           type="text"
@@ -64,7 +64,7 @@
       </div>
       <!--End Mobile Ham Menu-->
       <!--Navbar-->
-      <nav class="hidden">
+      <nav class="hidden z-50 fixed w-full bg-white">
         <ul class="list-none">
           <li class="h-10 shadow-xs">
             <a
@@ -112,6 +112,11 @@
         <a href="#" class="orange-button">دانلود</a>
       </nav>
       <!--End Navbar-->
+      <img
+        src="./assets/009_logo_Bg.svg"
+        alt="logo background"
+        class="w-auto h-48 -mr-24 transition-all duration-200"
+      />
     </header>
     <main></main>
   </body>

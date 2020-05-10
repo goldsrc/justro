@@ -19,7 +19,7 @@ if (hamburger !== null && nav !== null) {
     }
   });
   nav.addEventListener('animationend', () => {
-    nav.className = '';
+    nav.classList.remove('animated', 'bounceInDown', 'bounceOutUp');
     if (!hamburger.classList.contains('is-active')) {
       nav.classList.add('hidden');
     }
